@@ -1,7 +1,27 @@
 document.addEventListener('DOMContentLoaded', ready);
 function ready() {
-  wifiDetect();
+  allImagesLoaded();
+  // wifiDetect();
 }
+
+
+function allImagesLoaded() {
+      var imagesLoaded = 0;
+  var totalImages = $('img').length;
+
+  $('img').each(function(idx, img) {
+    $('<img>').on('load', imageLoaded).attr('src', $(img).attr('src'));
+  });
+
+  function imageLoaded() {
+    imagesLoaded++;
+    if (imagesLoaded == totalImages) {
+      $('#wait').hide();
+      $('#go').toggle();
+    }
+  }
+
+  }
 
 function wifiDetect() {
   let content = document.getElementById('wrapper');
