@@ -82,6 +82,7 @@ body {
 }
 
 .menu li  {
+
   color: white;
   font-size: 24px;
   display: inline-block;
@@ -102,6 +103,7 @@ a.chapter-anchor {
   position: relative;
   top: 150px;
 }
+
 
 .header {
   position: fixed;
@@ -181,32 +183,18 @@ img {
 
 /* Media Queries for different size screens*/
 @media screen and (max-width: 900px) {
-  
-
- .content p {
-  font-size: 24px;
-  }
-
  .container {
     padding-top: calc(1.5em + 3em + 3 * 1.5 * 36px);
  }
 }
 
 @media screen and (max-width: 600px) {
-  .content p {
-  font-size: 26px;
-  }
-
  .container {
     padding-top: calc(1.5em + 3em + 3 * 1.5 * 36px);
  }
 }
 
 @media screen and (max-width: 500px) {
-  .content p {
-  font-size: 20px;
-  }
-
  .container {
     padding-top: calc(1.5em + 3em + 4 * 1.5 * 36px);
  }
@@ -229,8 +217,5 @@ img {
 
 .intro h3 {
   font-size: 50px;
-}
 
-#go {
-  display: none;
 }
