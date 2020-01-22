@@ -174,20 +174,9 @@ img {
  .content p {
   font-size: 20px;
   margin-bottom: 1em;
-  text-indent: 2em;
+  /*text-indent: 2em;*/
 
 }
-
-.content p:first-of-type {
-  text-indent: 0;
-}
-
-
-.chapter7 p  {
-  text-indent: 0;
-}
-
-
 
 /* Media Queries for different size screens*/
 @media screen and (max-width: 900px) {
