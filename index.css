@@ -31,24 +31,18 @@ have to change the .header definition in the index.css
   box-sizing: border-box;
 }
 
-a, a:visited {
-  color: inherit;
-  text-decoration: none;
-  text-decoration-color: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 body {
   width: 100%;
   font-family: 'druk';
-  background-color: #000; 
 }
 
 .wrapper {
   width: 100%;
+  
+  /*opacity: 0.5;*/
+
+  background-color: #000;  
+
 }
 
 .wrapper::after {
@@ -76,53 +70,24 @@ body {
   background-color: #fff;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu li  {
-
-  color: white;
-  font-size: 24px;
-  display: inline-block;
-}
-
 .chapter {
-  margin-bottom: 2em;
-}
+  margin-bottom: 10em;
 
-a.chapter-anchor {
-    display: block;
-    position: relative;
-    top: -150px;
-    /*visibility: hidden;*/
-}
-
-.chapter-anchor h2  {
-  position: relative;
-  top: 150px;
 }
 
 
-.header {
+.title {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 1.5em 2em 0em 2em;
+  padding: 1.5em 2em 3em 2em;
   /*opacity: 0.5;*/
   margin: auto;
   max-width: 900px;
   text-align: center;
   color: #fff;
   background-color: black;
-  z-index: 9999;
-}
-
-.big-title {
-  font-size: 36px;
-  /*line-height: 10px;*/
 }
 
 h1 {
@@ -136,8 +101,10 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
-  margin-bottom: 1.5em;
+  font-size: 30px;
+  padding-top: 2em;
+  margin-bottom: 2em;
+
 }
 
 img {
@@ -175,28 +142,20 @@ img {
 }
 
 
-.chapter7 p  {
-  text-indent: 0;
-}
-
-
 
 /* Media Queries for different size screens*/
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
  .container {
-    padding-top: calc(1.5em + 3em + 3 * 1.5 * 36px);
+  position: relative;
+  left: 2em;
+  right: 1em;
  }
-}
+}*/
 
 @media screen and (max-width: 600px) {
  .container {
-    padding-top: calc(1.5em + 3em + 3 * 1.5 * 36px);
- }
-}
+    padding-top: calc(1.5em + 3em + 4 * 1.5 * 30px);
 
-@media screen and (max-width: 500px) {
- .container {
-    padding-top: calc(1.5em + 3em + 4 * 1.5 * 36px);
  }
 }
 
@@ -205,17 +164,17 @@ img {
 }
 
 .intro {
+  width: 500px;
+  height: 100px;
+  padding: 0px;
+
   position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  
-  text-align: center;
-  color: #fff;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
 }
 
 .intro h3 {
-  font-size: 50px;
-
+  font-size: 24px;
 }
